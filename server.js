@@ -17,7 +17,9 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://mongouser:mongopass@ds255794.mlab.com:55794/heroku_gxtw33q8", { useNewUrlParser: true });
+// mongoose.connect(process.env.MONGODB_URI || "mongodb://mongouser:mongopass@ds255794.mlab.com:55794/heroku_gxtw33q8", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI;
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
 function shouldCompress (req, res) {
   if (req.headers['x-no-compression']) {
