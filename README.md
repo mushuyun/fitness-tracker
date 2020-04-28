@@ -5,6 +5,11 @@ This app tracks your everyday work out by categrories such as resistance and car
 
 Please refer to the heroku deploy page here: https://sue-fit-tracker.herokuapp.com/?id=5ea79a712e8cc60017b07499
 
-Please refer to the screenshots below to get a better idea: 
+#### Please refer to the screenshots below to get a better idea: ####
 
-![workout1]
+![workout1](public/assets/images/ssh1)
+![workout1](public/assets/images/ssh2)
+![workout1](public/assets/images/ssh3)
+
+
+
