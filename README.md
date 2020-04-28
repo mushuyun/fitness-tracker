@@ -7,9 +7,9 @@ Please refer to the heroku deploy page here: https://sue-fit-tracker.herokuapp.c
 
 #### Please refer to the screenshots below to get a better idea: ####
 
-![workout1](public/assets/images/ssh1)
-![workout1](public/assets/images/ssh2)
-![workout1](public/assets/images/ssh3)
+![workout1](public/assets/images/ssh1.jpg)
+![workout2](public/assets/images/ssh2.jpg)
+![workout3](public/assets/images/ssh3.jpg)
 
 
 
