@@ -2,7 +2,7 @@ require("dotenv");
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
-//var compression = require('compression');
+var compression = require('compression');
 var compression = require('compression');
 
 const PORT = process.env.PORT || 3000;
@@ -17,7 +17,6 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// mongoose.connect(process.env.MONGODB_URI || "mongodb://mongouser:mongopass@ds255794.mlab.com:55794/heroku_gxtw33q8", { useNewUrlParser: true });
 var MONGODB_URI = process.env.MONGODB_URI;
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true });
 
