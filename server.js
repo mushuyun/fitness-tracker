@@ -1,3 +1,4 @@
+require("dotenv");
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
@@ -16,7 +17,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://sue1:Tha,bto7@ds255794.mlab.com:55794/heroku_gxtw33q8", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://mongouser:mongopass@ds255794.mlab.com:55794/heroku_gxtw33q8", { useNewUrlParser: true });
 
 function shouldCompress (req, res) {
   if (req.headers['x-no-compression']) {
